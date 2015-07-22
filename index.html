@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Real-time visualization of 2016 U.S. Presidential Election candidates' Twitter feeds.">
+<meta name="author" content="Ross Goodwin">
+
+<title>TweetPoints</title>
+
+<!-- GOOGLE FONTS -->
+<link href='https://fonts.googleapis.com/css?family=Cousine:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<!-- BOOTSTRAP -->
+<link rel='stylesheet' href='css/bootstrap.min.css' type='text/css'>
+<link rel='stylesheet' href='css/bootstrap-theme.min.css' type='text/css'>
+
+<style>
+
+
+#vis {
+	margin-top: 25px;
+	/*display: table-column;*/
+}
+
+.twitter-link {
+  display: block;
+  /*margin-top: 50px;*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  /*margin-left: 25px;*/
+  padding: 7px 10px 7px 10px;
+  color: #333333;/*LYNCH*/
+  background-color: #F2F1EF;/*CARARRA GREY*/
+  border-radius: 5px;
+  border-bottom: 2px solid #D2D7D3;
+  font-family: 'Cousine', monospace;
+  font-size: 1em;
+  text-align: center;
+  width: 200px;
+}
+
+.twitter-link:hover {
+	text-decoration: none;
+	background-color: #D2D7D3;
+}
+
+.svg-cont {
+	display: block;
+	border: 2px solid #F2F1EF;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+	
+	<div id="vis" class="row"></div>
+	
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src='js/bootstrap.min.js'></script>
+	<script src="js/d3/d3.min.js"></script>
+	<script src="js/d3.layout.cloud.js"></script>
+	<script src="js/wordcloud.js"></script>
+
+</body>
