@@ -2,6 +2,8 @@
 
 $.getJSON("http://54.148.103.250/", function(candidateTweets){
 
+  $("#loadinggif").hide();
+
   function fill1(x) {
     var blues = ["#3498DB", "#59ABE3", "#4183D7", "#4B77BE", "#19B5FE", "#3A539B", "#89C4F4", "#446CB3"];
     var y = x % blues.length;

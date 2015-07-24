@@ -20,6 +20,21 @@
 
 <style>
 
+h1 {
+	color: #67809F;
+	font-weight: 400;
+}
+
+#header {
+	font-family: 'Cousine', monospace;
+	width: 800px;
+	margin: 0 auto;
+}
+
+.lead {
+	color: #95A5A6;
+	font-weight: 400;
+}
 
 #vis {
 	margin-top: 25px;
@@ -57,6 +72,12 @@
 	margin-right: auto;
 }
 
+#loadinggif {
+	display: block;
+	width: 800px;
+	margin: 0 auto;
+}
+
 
 </style>
 
@@ -64,8 +85,22 @@
 
 <body>
 
+	<div id="header">
+		<h1><a href="http://rossgoodwin.com/tweetingpoints">TWEETING POINTS</a></h1>
+		<p class="lead">
+			Real-time word clouds of the 25 most recent tweets from candidates in the 2016 U.S. Presidential Election
+		</p>
+		<p class="lead text-right">
+			By <a href="http://rossgoodwin.com">Ross Goodwin</a>
+		</p>
+	</div>
+
 	
-	<div id="vis" class="row"></div>
+	<div id="vis" class="row">
+		<div id="loadinggif">
+			<img src="assets/loading.gif" alt="LOADING...">
+		</div>
+	</div>
 	
 
 	<script src="js/jquery-2.1.4.min.js"></script>
